@@ -1,0 +1,17 @@
+[insert_php]
+# Read in the file
+$filepath = "http://www.starling.systems/wp-content/uploads/2015/10/emails.txt";
+$lines = file($filepath);
+$found = 0;
+# Loop through all emails in file
+for ($i = 0; $i <= count($lines); $i++) {
+# Compare each email to input email
+$mod = trim($lines[$i]);
+if(strcmp($mod,"qwer@qwer.qwr") == 0)
+{
+$found = 1;
+}
+}
+echo "$found";
+
+[/insert_php]
